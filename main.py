@@ -9,8 +9,8 @@ import time
 from supabase import create_client
 import json
 
-SUPABASE_URL = "https://xqfdhuaihalkptpvlive.supabase.co"
-SUPABASE_KEY = "sb_publishable_OJbjN67mLIMpRpQjzptNaQ_UAn1PxgY"
+SUPABASE_URL = os.getenv("SUPABASE_URL")
+SUPABASE_KEY = os.getenv("SUPABASE_KEY")
 supabase = create_client(SUPABASE_URL, SUPABASE_KEY)
 
 load_dotenv()
